@@ -1,1 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+  <title>Home</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js" defer></script>
+</head>
+<body>
+  <!-- Header -->
+  <header>
+    <div class="menu-icon" onclick="toggleMenu(this)">
+      <div class="bar1"></div>
+      <div class="bar2"></div>
+      <div class="bar3"></div>
+    </div>
+    <h1>Home</h1>
+  </header>
 
+  <!-- Side Menu -->
+  <nav id="sideMenu">
+    <ul>
+      <li><a href="home" class="active">Home</a></li>
+      <li><a href="creations">Creations</a></li>
+      <li><a href="about">About</a></li>
+      <li><a href="feedback">Send Feedback</a></li>
+    </ul>
+  </nav>
+
+  <!-- Main Content -->
+  <main>
+    <!-- Hero Section -->
+    <section class="hero">
+      <h2>Welcome to My World</h2>
+      <p>Your gateway to amazing creations and innovative ideas.</p>
+      <button onclick="location.href='creations'">Explore Creations</button>
+    </section>
+
+    <!-- Features Section -->
+    <section class="features">
+      <h2>Our Features</h2>
+      <div class="features-grid">
+        <div class="feature-card">
+          <h3>Creative Designs</h3>
+          <p>Bringing ideas to life with clean and intuitive designs.</p>
+        </div>
+        <div class="feature-card">
+          <h3>Fast Performance</h3>
+          <p>Optimized solutions for speed and reliability.</p>
+        </div>
+        <div class="feature-card">
+          <h3>Community Driven</h3>
+          <p>Join our vibrant community of creators and innovators.</p>
+        </div>
+        <div class="feature-card">
+          <h3>Community Driven</h3>
+          <p>Join our vibrant community of creators and innovators.</p>
+      </div>
+    </section>
+
+    <!-- Call-to-Action -->
+    <section class="cta">
+      <h2>Ready to Explore?</h2>
+      <p>Take the next step and dive into our amazing creations.</p>
+      <button onclick="location.href='about'">Learn More About Me</button>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer>
+    <p>&copy 2025 qerty Creations. All rights reserved.</p>
+  </footer>
+</body>
+</html>
