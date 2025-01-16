@@ -1,1 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Creations</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js" defer></script>
+</head>
+<body>
+  <!-- Header -->
+  <header>
+    <div class="menu-icon" onclick="toggleMenu(this)">
+      <div class="bar1"></div>
+      <div class="bar2"></div>
+      <div class="bar3"></div>
+    </div>
+    <h1>Creations</h1>
+  </header>
 
+  <!-- Side Menu -->
+  <nav id="sideMenu">
+    <ul>
+      <li><a href="home">Home</a></li>
+      <li><a href="creations" class="active">Creations</a></li>
+      <li><a href="about">About</a></li>
+      <li><a href="feedback">Send Feedback</a></li>
+    </ul>
+  </nav>
+
+  <!-- Main Content -->
+  <main>
+    <section class="projects">
+      <div class="project-container" id="project1">
+        <h2>Project One</h2>
+        <p>A brief description of Project One.</p>
+        <div class="project-description">
+          <p>This is the full description of Project One. Here you can add all the necessary details about the project.</p>
+        </div>
+        <div class="project-buttons">
+          <button onclick="toggleDescription('project1')">Learn More</button>
+          <button onclick="window.open('https://project-one-link.com', '_blank')">Open Project</button>
+        </div>
+      </div>
+      <div class="project-container" id="project2">
+        <h2>Project Two</h2>
+        <p>A brief description of Project Two.</p>
+        <div class="project-description">
+          <p>This is the full description of Project Two. Here you can add all the necessary details about the project.</p>
+        </div>
+        <div class="project-buttons">
+          <button onclick="toggleDescription('project2')">Learn More</button>
+          <button onclick="window.open('https://project-two-link.com', '_blank')">Open Project</button>
+        </div>
+      </div>
+      <!-- Add more projects here -->
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer>
+    <p>© 2025 Qerty's Creations. All rights reserved.</p>
+  </footer>
+
+  <script>
+    function toggleDescription(projectId) {
+      const projectContainer = document.getElementById(projectId);
+      projectContainer.classList.toggle('open');
+    }
+  </script>
+</body>
+</html>
