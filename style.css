@@ -1,1 +1,244 @@
+/* General Styles */
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background-color: #121212;
+  color: #00ff99;
+  overflow-x: hidden;
+}
 
+a {
+  text-decoration: none;
+  color: #00ff99;
+}
+
+/* Header */
+header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background-color: #121212;
+  color: #00ff99;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 5px 0.001px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+  z-index: 1000;
+}
+
+h1 {
+  margin: 0;
+  font-size: 1.5rem;
+}
+
+/* Menu Icon */
+.menu-icon {
+  cursor: pointer;
+}
+
+.bar1, .bar2, .bar3 {
+  width: 35px;
+  height: 5px;
+  background-color: #00ff99;
+  margin: 6px 0;
+  transition: 0.4s;
+}
+
+.change .bar1 {
+  transform: translate(0, 11px) rotate(-45deg);
+}
+
+.change .bar2 {
+  opacity: 0;
+}
+
+.change .bar3 {
+  transform: translate(0, -11px) rotate(45deg);
+}
+
+/* Side Menu */
+#sideMenu {
+  position: fixed;
+  top: 0;
+  left: -250px;
+  width: 250px;
+  height: 100%;
+  background-color: #121212;
+  box-shadow: 2px 0 5px rgba(0, 0, 0, 0.5);
+  transition: left 0.3s;
+  padding-top: 60px;
+}
+
+#sideMenu ul {
+  list-style: none;
+  padding: 0;
+}
+
+#sideMenu ul li {
+  margin: 15px 0;
+}
+
+#sideMenu ul li a {
+  color: #00ff99;
+  font-size: 1.2rem;
+  padding: 10px;
+  display: block;
+  text-align: center;
+  background-color: #121212;
+  border-radius: 5px;
+  transition: background-color 0.3s;
+}
+
+#sideMenu ul li a:hover,
+#sideMenu ul li a.active {
+  background-color: #00ff99;
+  color: #121212;
+}
+
+/* Projects Section */
+.projects {
+  padding: 80px 20px;
+  text-align: center;
+}
+
+.project-container {
+  display: flex;
+  flex-direction: column;
+  background-color: #1e1e1e;
+  border: 1px solid #00ff99;
+  border-radius: 8px;
+  padding: 20px;
+  margin-bottom: 30px;
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.project-description {
+  display: none;
+  margin-top: 10px;
+  font-size: 1rem;
+  color: #fff;
+}
+
+.project-container.open .project-description {
+  display: block;
+}
+
+.project-buttons {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 15px;
+}
+
+.project-buttons button {
+  padding: 10px 20px;
+  background-color: #00ff99;
+  color: #121212;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: transform 0.3s;
+}
+
+.project-buttons button:hover {
+  transform: scale(1.05);
+}
+
+/* Profile Image */
+.profile-image {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 5px solid #00ff99;
+  user-select: none; /* Prevent image selection */
+  pointer-events: none; /* Disable interaction */
+}
+
+.hero {
+  text-align: center;
+  margin: 50px auto;
+  max-width: 800px;
+}
+
+.hero h2 {
+  font-size: 2.5rem;
+  margin-bottom: 20px;
+}
+
+.hero p {
+  font-size: 1.2rem;
+  margin-bottom: 30px;
+}
+
+.hero button {
+  padding: 10px 20px;
+  background-color: #00ff99;
+  color: #121212;
+  border: none;
+  border-radius: 5px;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: transform 0.3s;
+}
+
+.hero button:hover {
+  transform: scale(1.05);
+}
+
+/* Features Section */
+.features {
+  text-align: center;
+  margin: 50px auto;
+}
+
+.features-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 20px;
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+.feature-card {
+  background-color: #1e1e1e;
+  border: 1px solid #00ff99;
+  padding: 20px;
+  border-radius: 8px;
+  transition: transform 0.3s;
+}
+
+.feature-card:hover {
+  transform: scale(1.05);
+}
+
+/* Call-to-Action Section */
+.cta {
+  text-align: center;
+  margin: 50px auto;
+}
+
+.cta button {
+  padding: 10px 20px;
+  background-color: #00ff99;
+  color: #121212;
+  border: none;
+  border-radius: 5px;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: transform 0.3s;
+}
+
+.cta button:hover {
+  transform: scale(1.1);
+}
+
+/* Footer */
+footer {
+  text-align: center;
+  padding: 10px 0;
+  background-color: #121212;
+  border-top: 1px solid #00ff99;
+}
